@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Les Lumières de la Ville - Calcul de vos écnomies</title>
+        <script language="javascript">
+            function calcul(formulaire) {
+                //Recupération des valeurs du formulaire
+                var nbA = document.getElementById("nbAmpoule").value;
+                var cons = document.getElementById("consommation").value;
+                var ferm = document.getElementById("fermeture").value;
+                var ouv = document.getElementById("ouverture").value;
+                var prix = document.getElementById("prix").value;
+
+                //calcul du nombre d'heure
+                ouv = ouv.split(':');
+                ouv = parseInt(ouv[0])*60+parseInt(ouv[1]);
+                ferm = ferm.split(':');
+                ferm = parseInt(ferm[0])*60+parseInt(ferm[1])
+                ferm = 1440-ferm;
+                var nbHeure = ((ferm+ouv)/60)-2;
+                //Calcul final
+                var final = nbA*cons*nbHeure*prix;
+
+                //affichage dans le paragraphe
+                var par = document.getElementById("amodifier");
+                var texteAjout = "Vous pourriez donc économiser : "+final +"€ par an en coupant l'éclairage de vos vitrines ! Nous savons que ce n'est pas une somme très élevée, mais vous ferez ainsi une bonne action pour votre porte-monnaie, mais aussi pour l'environnement !";
+                par.innerHTML = texteAjout;
+                //par.setElementById(texteAjout);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Les Lumières de la Ville</h1>
+        
+        <h2>Faire le calcul de vos économies !</h2>
+        <p>Compléter ce formulaire et découvrez combien vous economiseriez en coupant l'éclairage de vos vitrines dans les horaires qui l'interdissent
+            <form name="formulaire" method="post" action=""></form>
+                <ul>
+                    <li>
+                        <label for="nbAmpoule">Nombre d'ampoules</label> : 
+                        <input type="number" name="nbAmpoule" id="nbAmpoule" required>
+                    </li>
+                    <li>
+                        <label for="consommation">Consommation moyenne de vos ampoules</label> : 
+                        <input type="number" name="consommation" id="consommation" required>
+                    </li>
+                    <li>
+                        <label for="fermeture">Heure de fermeture de  consommation commerce</label> : 
+                        <input type="time" name="fermeture" id="fermeture" required>
+                    </li>
+                    <li>
+                        <label for="ouverture">Heure d'ouverture de votre commerce</label> : 
+                        <input type="time" name="ouverture" id="ouverture" required>
+                    </li>
+                    <li>
+                        <label for="prix">Prix horaire de votre electricité</label> :
+                        <input type="number" name="prix" id="prix" required>
+                    </li>
+                </ul> 
+                <p>
+                    Découvrez vos économies :
+                </p>
+                <input type="button" value="Terminer" onClick="calcul(formulaire)">
+            </form>
+        </p>
+        <p id="amodifier"></p>
+    </body>
+</html>
