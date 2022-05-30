@@ -1,0 +1,175 @@
+/*Importation des différentes polices*/
+@font-face{
+    font-family:'Neon';
+    src:url('FONTS/neon_light/NeonLight-Regular.ttf');
+}
+
+@font-face{
+    font-family:'LightDot';
+    src:url('FONTS/lightdot_8x8/Lightdot-8x8.ttf');
+}
+
+@font-face{
+    font-family:'Umunu';
+    src:url('FONTS/umunu/umunu.otf');
+}
+
+@font-face{
+    font-family:'Comforta';
+    src:url('FONTS/comfortaa/Comfortaa-Light.ttf');
+}
+
+/*Paramètres appliqués à toute la page*/
+body{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    font-family: Umunu;
+    margin:5.5em;
+    align-items: center;
+}
+
+.MainPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+h1{
+    font-family: Neon;
+    font-size: 6em;
+    display: flex;
+    justify-content: space;
+    text-align: center;
+    transition: 0.5s;
+}
+h1:hover{
+    color:#edce04;
+    text-shadow: 0 0 50px #edce04
+}
+
+h2{
+    padding-top: 4em;
+    font-family: LightDot;
+    font-size: 1.75em;
+    margin: 0.5em;
+}
+
+.NormalText{
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Premier Paragraphe*/
+#Introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    height:auto;
+    text-align: justify;
+    margin:2em;
+    align-items: flex-end;
+    font-size: 1.5em;
+}
+
+img{
+    width:40%;
+    margin:2em;
+    border-radius: 0.5em;
+}
+
+#TexteIntroduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Citation de l'article*/
+figure{
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.10em;
+}
+
+figcaption{
+    font-style: normal;
+    font-size: 1em;
+}
+
+/*Faire le bouton pour faire le calcul*/
+.LightningButton{
+    display: flex;
+    justify-content: center;
+    font-size: normal;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 2em;
+    padding: 1em;
+    margin-top:2em;
+    text-align: center;
+}
+.LightningButton:hover{
+    background: #edce04;
+    color: #000000;
+    box-shadow: 0 0 50px #edce04;
+}
+
+/*liste des partenaires*/
+ul{
+    font-size: 1.25em;
+    list-style: url("LOGOS/bulb.png");
+}
+
+/*Lien qui nous ramène vers le page principale*/
+.LinkToMain{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Barre de navigation*/
+nav{
+    position:fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: max-content;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1em;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2em;
+    width: 18%;
+}
+
+.menu:hover{
+    background-color: #edce04;
+    color: #000000;
+    box-shadow: 0 0 50px #edce04;
+}
+
+a{
+    text-decoration: none;
+    color:#000000
+}

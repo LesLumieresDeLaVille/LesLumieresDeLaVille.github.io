@@ -3,46 +3,68 @@
     <head>
         <meta charset="utf-8" />
         <title>Les Lumières de la Ville</title>
+        <link rel="stylesheet" href='style.css' />
     </head>
 
     <body>
-        <h1>Les Lumières de la Ville</h1>
 
-        <h2>Notre projet</h2>
-        <p>
-            Texte explicatif de notre projet
-            <img src="vitrine1.jpg" alt="Photo d'une vitrine de Brest allumée de nuit"/>
-            <figure>
-                <p>
-                    Texte du décret national
-                </p>
-                <figcaption>Decret du 20/20</figcaption>
-            </figure>
-        </p>
+        <nav>
+            <div class="menu"><a href="#bouton1">Accueil</a></div>
+            <div class="menu"><a href="#Introduction">Introduction</a></div>
+            <div class="menu"><a href="#bouton3">Calcul des économies</a></div>
+            <div class="menu"><a href="#bouton4">Remerciements</a></div>
+        </nav>
+
+        <div id="bouton1"></div>
+
+        <h1 >Les Lumieres de la Ville</h1>
         
-        <h2>Vous êtes commerçant</h2>
-        <p> ... et souhaitez connaitre les économies que vous pourriez faire par an en respactant à la lettre les horaires autorisés pour 
-            l'éclairage de vos vitrines ?</p>
-            <a href="SecondPage.html">Faire le calcul</a>
+        <div id="MainPart">
+            <div id="Introduction">
+                <div id="TexteIntroduction">
+                    <h2 class="Titre2">Notre projet</h2>
+                    <p>
+                        La nuit, dans le centre-ville de Brest, des rues sont éclairées perpétuellement par de nombreuses vitrines même avec un éclairage public. <br>
 
-        <h2>Mais</h2>
-        <p>On ne peut pas vous forcer à éteindre tous les éclairages de vos vitrines (même si on vous encourage fortement à le faire. Nous pouvons cependant vous conseiller d'investir dans des
+                        Notre objectif est d’attirer l’attention des commerces qui maintiennent leur éclairage nocturne, montrer les répercussions environnementales et les alternatives possibles pour baisser la consommation. <br>
+
+                        Notre but n’est pas d’imposer notre vision, mais questionner et sensibiliser au fur et à mesure les commerçants, afin de ne pas laisser leurs vitrines éclairées la nuit.<br>
+                    </p>
+                </div>
+                <img src="vitrine1.jpg" alt="Photo d'une vitrine de Brest allumée de nuit"/>
+            </div>
+
+            <figure>
+                <p class="NormalText">
+                    " Les éclairages de vitrines de magasins de commerce ou d'exposition sont éteints à 1 heure du matin au plus tard ou 1 heure après la cessation de l'activité si celle-ci est plus tardive et sont allumées à 7 heures du matin au plus tôt ou 1 heure avant le début de l'activité si celle-ci s'exerce plus tôt. "
+                </p>
+                <figcaption>Arrêté du 27/12/2018</figcaption>
+            </figure>
+        
+            <h2 id="bouton3">Vous etes commercant</h2>
+            <p class="NormalText"> ... et souhaitez connaitre les économies que vous pourriez faire par an en respactant à la lettre les horaires autorisés pour 
+                l'éclairage de vos vitrines ?
+                <a class="LightningButton" href="SecondPage.html">Faire le calcul</a></p>
+
+            <h2>Mais</h2>
+            <p class="NormalText">On ne peut pas vous forcer à éteindre tous les éclairages de vos vitrines (même si on vous encourage fortement à le faire. Nous pouvons cependant vous conseiller d'investir dans des
             ampoules basse consommation !</p>
 
-        <h2>En accompagnement d'un projet de Brest Métropole</h2>
-        <p>Lors de notre projet, nous sommes entrés en relation avec la métropole de Brest, que notre projet interessait. En effet, la métropole a pour projet de modifier les éclairages public 
-            de la ville afin d'harmoniser les espaces publics urbains, dans un souci d'environnement et de consommation. <br>
-            Les recensements que nous avons ainsi effectués afin de mieux cibler notre action, serviront aussi au projet de la mairie !
-        </p>
-        <h2>Remerciements</h2>
-        <p>
-            Ce projet n'aurait pas été possible sans différents acteurs externes à notre groupe de projet IHH, c'est pourquoi nous remercions :
-            <ul>
-                <li>Brest Métropole, et plus particulièrement M. Potard, pour ses conseils et son aide.</li>
-                <li>M. Bonnerave pour son encadrement de notre projet etc etc A COMPLETER</li>
-                <li>Mme. Toquet pour son aide dans la recherche de contacts dans le milieu commercial de la ville de Brest</li>
-            </ul>
-        </p>
+            <h2>En accompagnement d'un projet de Brest Metropole</h2>
+            <p class="NormalText">Lors de notre projet, nous sommes entrés en relation avec la métropole de Brest, que notre projet interessait. En effet, la métropole a pour projet de modifier les éclairages public 
+                de la ville afin d'harmoniser les espaces publics urbains, dans un souci d'environnement et de consommation. <br>
+                Les recensements que nous avons ainsi effectués afin de mieux cibler notre action, serviront aussi au projet de la mairie !
+            </p>
+            <h2 id="bouton4">Remerciements</h2>
+            <p class="NormalText">
+                Ce projet n'aurait pas été possible sans différents acteurs externes à notre groupe de projet IHH, c'est pourquoi nous remercions :
+                <ul>
+                    <li>Brest Métropole, et plus particulièrement M. Potard, pour ses conseils et son aide.</li>
+                    <li>M. Bonnerave pour son encadrement de notre projet etc etc A COMPLETER</li>
+                    <li>Mme. Toquet pour son aide dans la recherche de contacts dans le milieu commercial de la ville de Brest</li>
+                </ul>
+            </p>
+        </div>
 
     </body>
 </html>

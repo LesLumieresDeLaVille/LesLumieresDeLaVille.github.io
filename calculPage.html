@@ -2,8 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href='style.css' />
-        <title>Les Lumieres de la Ville - Calcul de vos écnomies</title>
+        <title>Les Lumières de la Ville - Calcul de vos écnomies</title>
         <script language="javascript">
             function calcul(formulaire) {
                 //Recupération des valeurs du formulaire
@@ -30,20 +29,14 @@
                 //par.setElementById(texteAjout);
             }
         </script>
+    
     </head>
 
     <body>
-        <nav>
-            <div class="menu"><a href="index.html#bouton1">Accueil</a></div>
-            <div class="menu"><a href="index.html#Introduction">Introduction</a></div>
-            <div class="menu"><a href="index.html#bouton3">Calcul des économies</a></div>
-            <div class="menu"><a href="index.html#bouton4">Remerciements</a></div>
-        </nav>
-
-        <a href='index.html' class="LinkToMain"><h1>Les Lumieres de la Ville</h1></a>
+        <h1>Les Lumières de la Ville</h1>
         
-        <h2>Faire le calcul de vos economies !</h2>
-        <p class="NormalText">Compléter ce formulaire et découvrez combien vous economiseriez en coupant l'éclairage de vos vitrines dans les horaires qui l'interdissent
+        <h2>Faire le calcul de vos économies !</h2>
+        <p>Compléter ce formulaire et découvrez combien vous economiseriez en coupant l'éclairage de vos vitrines dans les horaires qui l'interdissent
             <form name="formulaire" method="post" action=""></form>
                 <ul>
                     <li>
@@ -51,11 +44,11 @@
                         <input type="number" name="nbAmpoule" id="nbAmpoule" required>
                     </li>
                     <li>
-                        <label for="consommation">Consommation moyenne de vos ampoules</label> : 
+                        <label for="consommation">Consommation moyenne de vos ampoules (en Watts)</label> : 
                         <input type="number" name="consommation" id="consommation" required>
                     </li>
                     <li>
-                        <label for="fermeture">Heure de fermeture de  consommation commerce</label> : 
+                        <label for="fermeture">Heure de fermeture de votre commerce</label> : 
                         <input type="time" name="fermeture" id="fermeture" required>
                     </li>
                     <li>
@@ -63,16 +56,14 @@
                         <input type="time" name="ouverture" id="ouverture" required>
                     </li>
                     <li>
-                        <label for="prix">Prix horaire de votre electricité</label> :
+                        <label for="prix">Prix horaire de votre electricité </label> :
                         <input type="number" name="prix" id="prix" required>
                     </li>
                 </ul> 
-                <p class="NormalText">
+                <p>
                     Découvrez vos économies :
                 </p>
-                <div class="NormalText">
-                    <div class="LightningButton" onClick="calcul(formulaire)">Terminer</div>
-                </div>
+                <input type="button" value="Terminer" onClick="calcul(formulaire)">
             </form>
         </p>
         <p id="amodifier"></p>
